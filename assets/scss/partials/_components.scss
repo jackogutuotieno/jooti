@@ -1,0 +1,52 @@
+// Hero Slider
+#hero-slider {
+    position: relative;
+    margin: 50px;
+    .slider-wrap {
+        background-color: rgba($color: $main-color, $alpha: .6);
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    .owl-nav {
+        margin: 0;
+        text-align: right;
+        button {
+            background-color: $main-color;
+            padding: .8rem 2rem !important;
+            border-radius: 0;
+            margin: 1px;
+        }
+    }
+    .slide {
+        position: relative;
+        .main-wrap {
+            position: absolute;
+            top: 0;
+            background: rgba($color: $main-color, $alpha: .7);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 4rem;
+            .text-wrap {
+                width: 50%;
+                h2 {
+                    font-weight: 700;
+                    color: $white;
+                    font-size: 2.5rem;
+                }
+                p {
+                    color: $white;
+                    font-size: .9rem;
+                    font-weight: 300;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}

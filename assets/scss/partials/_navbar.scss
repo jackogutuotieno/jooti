@@ -1,0 +1,25 @@
+#navigation {
+    nav {
+        padding: 0 2rem;
+        height: auto;
+        .navbar-brand {
+            font-weight: 300;
+            strong {
+                font-weight: 700;
+                padding-right: .3rem;
+                color: $main-color;
+            }
+        }
+        ul {
+            li {
+                a {
+                    padding-top: 1.5rem;
+                    &.nuxt-link-exact-active {
+                        background-color: $main-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
