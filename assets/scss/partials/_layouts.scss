@@ -1,0 +1,27 @@
+.title-wrap {
+    margin-bottom: 2rem;
+    h2, h3 {
+        color: $main-color;
+        font-weight: 700;
+    }
+    &.left--line {
+        &:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background-color: $black;
+        }
+    }
+}
+
+.content-padded {
+    .right-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    p {
+        text-align: justify;
+    }
+}
