@@ -1,5 +1,5 @@
 // Hero Slider
-#hero-slider {
+.default-slider {
     position: relative;
     margin: 50px;
     .slider-wrap {
@@ -13,12 +13,15 @@
     }
     .owl-nav {
         margin: 0;
-        text-align: right;
+        margin-top: -1px !important;
+        text-align: right !important;
         button {
-            background-color: $main-color;
+            background-color: $main-color !important;
             padding: .8rem 2rem !important;
-            border-radius: 0;
-            margin: 1px;
+            border-radius: 0 !important;
+            margin: 1px !important;
+            width: 6rem;
+            height: 3rem;
         }
     }
     .slide {

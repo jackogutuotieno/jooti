@@ -15,13 +15,24 @@
     }
 }
 
-.content-padded {
-    .right-col {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+#about {
+    padding-top: 3rem;
+    .left-col {
+        img {
+            position: relative;
+            left: -40px;
+            top: -100px;
+        }
     }
-    p {
-        text-align: justify;
+    .right-col {
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(center);
+        .content-padded {
+            padding-right: 3rem;
+            p {
+                text-align: justify;
+            }
+        }
     }
 }

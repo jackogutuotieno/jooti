@@ -2,8 +2,8 @@
   <div class="home-page">
     <HeroSlider />
     <b-container>
-      <b-row class="bg-light">
-        <b-col lg="6">
+      <b-row id="about" class="bg-light">
+        <b-col lg="6" class="left-col">
           <b-img fluid src="../assets/images/img-01.jpg" alt="About Us"></b-img>
         </b-col>
         <b-col lg="6" class="right-col">
@@ -25,13 +25,37 @@
               clients, fostering a relationship built on trust, confidence and nestyaybe it’s  fostering a 
               relationship our.
             </p>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
-  </div>
-</template>
+          </div> <!-- ./div -->
+        </b-col> <!-- ./b-col -->
+      </b-row> <!-- ./b-row -->
+    </b-container> <!-- ./b-container -->
+    <FeaturedWork />
+  </div> <!-- ./div -->
+</template> <!-- ./template -->
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      slides: [
+          { 
+              id:'1', 
+              url: 'https://placeimg.com/1920/800/any?1', 
+              alt: 'Image one',
+              title: 'The standard Lorem Ipsum passage, used since the 1500s',
+              caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+              link: '/home'
+          },
+          { 
+              id:'2', 
+              url: 'https://placeimg.com/1920/800/any?2', 
+              alt: 'Image two',
+              title: 'Sed ut perspiciatis unde omnis iste natus error sit',
+              caption: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+              link: '/about'
+          },
+      ],
+    }
+  }
+}
 </script>
