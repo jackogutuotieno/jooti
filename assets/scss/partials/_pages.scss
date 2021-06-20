@@ -13,10 +13,14 @@ header {
     margin-right: 0;
     .slide {
         .main-wrap {
+            padding: 2rem;
             .text-wrap {
                 width: 100%;
                 h2 {
                     font-size: 1.5rem;
+                }
+                p {
+                    padding-top: 0;
                 }
             }
         }
