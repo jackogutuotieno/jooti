@@ -13,12 +13,6 @@ header {
     margin-right: 0;
     .slide {
         .main-wrap {
-            position: relative;
-            background-color: $main-color;
-            padding: 1rem;
-            width: 67%;
-            bottom: 2rem;
-            top: auto;
             .text-wrap {
                 width: 100%;
                 h2 {
@@ -27,10 +21,7 @@ header {
             }
         }
     }
-    .owl-nav {
-        position: absolute;
-        bottom: 73px;
-        top: auto;
-        right: 26%;
+    .text-center {
+        padding-bottom: 1rem;
     }
 }

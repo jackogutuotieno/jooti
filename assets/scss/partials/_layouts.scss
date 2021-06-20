@@ -8,9 +8,22 @@
         &:after {
             content: '';
             display: block;
-            width: 60px;
+            width: 50px;
             height: 2px;
             background-color: $black;
+            margin-top: 1rem;
+        }
+    }
+    &.center--line {
+        text-align: center;
+        &:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: $black;
+            margin: auto;
+            margin-top: 1rem;
         }
     }
 }

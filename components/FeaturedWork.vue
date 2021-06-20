@@ -1,5 +1,14 @@
 <template>
     <div id="featured-work" class="default-slider">
+        <div class="title-wrap center--line">
+            <h2>featured projects</h2>
+        </div>
+        <div class="text-center w-50 m-auto mb-3">
+            <p>
+                Ahis is Photoshop's version of Lorem Ipsum. Proin gravidavelvsauctor. aliquet. 
+                Aenean sollicitudin, lorem quis bibend um auctor, nisi elequat ipsum,
+            </p>
+        </div>
         <carousel :items="2" :center="true" :loop="true" :margin="10" :dots="false" :autoplay="true">
             <div class="slide" v-for="slide in slides" :key="slide.id">
                 <img :src="slide.url" :alt="slide.alt"/>
