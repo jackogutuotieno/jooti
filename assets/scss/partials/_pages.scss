@@ -1,8 +1,30 @@
-
 // Header
 header {
+    margin-top: 6rem;
     .default-slider {
-        margin-top: 20px;;
+        margin-top: 20px;
+        .owl-nav {
+            position: relative;
+            right: -50px;
+        }
+        .btn-primary {
+            background-color: transparent;
+            border-color: $white;
+            letter-spacing: .2rem;
+            position: relative;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+            border-radius: 0;
+            &:after {
+                content: url('../../assets/images/long-arrow.svg');
+                color: $white;
+                transform: rotate(180deg);
+                width: 63px;
+                height: 63px;
+            }
+        }
     }
 }
 
@@ -14,12 +36,14 @@ header {
             position: relative;
             left: -40px;
             top: -100px;
+            min-height: 570px;
+            object-fit: cover;
         }
     }
 }
 
 // Featured Work
-#featured-work {
+#portfolio {
     padding-top: 6rem;
     margin-left: 0;
     margin-right: 0;
@@ -39,6 +63,16 @@ header {
     }
     .text-center {
         padding-bottom: 1rem;
+    }
+    .owl-carousel {
+        .owl-item {
+            img {
+                display: block;
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
     }
 }
 

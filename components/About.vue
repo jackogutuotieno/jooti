@@ -3,11 +3,11 @@
         <b-container>
             <b-row id="about" class="bg-light">
                 <b-col lg="6" class="left-col">
-                    <b-img fluid src="../assets/images/img-01.jpg" alt="About Us"></b-img>
+                    <b-img fluid :src="about_banner_img" alt="About Us"></b-img>
                 </b-col>
                 <b-col lg="6" class="right-col flex-centered">
                     <div class="title-wrap left--line">
-                        <h2>about Us</h2>
+                        <h2>{{ about_title }}</h2>
                     </div>
                     <div class="content-padded">
                         <p>
@@ -30,3 +30,14 @@
         </b-container> <!-- ./b-container -->
     </div>
 </template>
+
+<script>
+    export default {
+        data () {
+            return {
+                about_banner_img: require("../assets/images/img-01.jpg"),
+                about_title: 'about Us',
+            }
+        }
+    }
+</script>

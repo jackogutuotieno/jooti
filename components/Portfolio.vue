@@ -1,7 +1,7 @@
 <template>
-    <div id="featured-work" class="default-slider">
+    <div id="portfolio" class="default-slider">
         <div class="title-wrap center--line">
-            <h2>featured projects</h2>
+            <h2> {{ portfolio_title }}</h2>
         </div>
         <div class="text-center w-50 m-auto mb-3">
             <p>
@@ -11,7 +11,7 @@
         </div>
         <carousel :items="2" :center="true" :loop="true" :margin="10" :dots="false" :autoplay="true">
             <div class="slide" v-for="slide in slides" :key="slide.id">
-                <img :src="slide.url" :alt="slide.alt"/>
+                <img :src="slide.img_src" :alt="slide.alt"/>
                 <div class="main-wrap">
                     <div class="text-wrap">
                         <h2>{{ slide.title }}</h2>
@@ -27,24 +27,25 @@
     export default {
         data () {
             return {
+                portfolio_title: 'Portfolio',
                 slides: [
                     { 
                         id:'1', 
-                        url: 'https://placeimg.com/1920/800/any?1', 
+                        img_src: require("../assets/images/portfolio/lontels.jpg"),
                         alt: 'Lontels Sacco',
                         title: 'Lontels Sacco',
                         caption: 'Precision Joomla Integration - 2013'
                     },
                     { 
                         id:'2', 
-                        url: 'https://placeimg.com/1920/800/any?2', 
+                        img_src: require("../assets/images/portfolio/moveon.jpg"), 
                         alt: 'Moveon Telecoms',
                         title: 'Moveon Telecoms',
                         caption: 'Precision WordPress Integration - 2020'
                     },
                     { 
                         id:'3', 
-                        url: 'https://placeimg.com/1920/800/any?2', 
+                        img_src: require("../assets/images/portfolio/lontels.jpg"),
                         alt: 'Destiny Women',
                         title: 'Destiny Women',
                         caption: 'Precision WordPress Integration - 2019',

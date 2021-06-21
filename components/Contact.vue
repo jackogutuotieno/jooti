@@ -7,23 +7,24 @@
                     <h2>Products and services that spark enthusiasm</h2>
                 </div>
                 <p>
-                    We strive to go above and beyond for our clients, fostering aelationship built on trust, 
-                    confidence and honesty. Maybe it's our family orientation, but we think the most satisfying 
-                    part of what we do is that we get toork with so many wonderful people. We're proud that we're 
-                    a 10omen-ned business certified by the Women's Business velopment Center (WBDC). We're also 
-                    proud that we put people first,ith monthly reward grams and team-building activities throughout 
-                    the year. We strive to go above and beyond for our clients.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia at sem nec accumsan. Vestibulum semper aliquet molestie.
                 </p>
-                <p>
-                    Maybe it’s our family orientation, but we think the most satisfying part of what we do 
-                    is that. building activities throughout the year. We strive to go above and bond for our 
-                    clients, fostering a relationship built on trust, confidence and nestyaybe it’s  fostering a 
-                    relationship our.
-                </p>
+                <ul>
+                    <li>
+                        <span class="icon-phone"></span>
+                        <a href="tel:+254720801001">254 720 80 10 01</a>
+                    </li>
+                    <li>
+                        <span class="icon-social-github"></span>
+                        <a href="http://github.com/jooti_tech">@Jooti_tech</a>
+                    </li>
+                </ul>
                 </div>
             </b-col> <!-- ./b-col -->
             <b-col lg="6" class="right-col">
-                <b-img fluid src="../assets/images/img-01.jpg"  class="img-padding-relative" alt="About Us"></b-img>
+                <figure class="figure">
+                    <b-img fluid src="../assets/images/img-02.jpg"  class="img-padding-relative w-100 h-100" alt="About Us"></b-img>
+                </figure>
             </b-col>
         </b-row> <!-- ./b-row -->
     </b-container> <!-- ./b-container -->

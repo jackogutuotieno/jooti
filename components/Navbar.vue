@@ -8,7 +8,7 @@
                     <b-nav-item to="/">Home</b-nav-item>
                     <b-nav-item to="/#about">About</b-nav-item>
                     <b-nav-item to="/#services">Services</b-nav-item>
-                    <b-nav-item to="/#featured-work">Portfolio</b-nav-item>
+                    <b-nav-item to="/#portfolio">Portfolio</b-nav-item>
                     <b-nav-item to="/#contact">Contact Us</b-nav-item>
                 </b-navbar-nav> <!-- ./b-navbar-nav -->
             </b-collapse> <!-- ./b-collapse -->

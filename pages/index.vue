@@ -2,7 +2,7 @@
   <div class="home-page">
     <HeroSlider />
     <About />
-    <FeaturedWork />
+    <Portfolio />
     <Services />
     <Contact />
   </div> <!-- ./div -->
