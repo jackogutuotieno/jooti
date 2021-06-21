@@ -4,6 +4,7 @@
     <About />
     <FeaturedWork />
     <Services />
+    <Contact />
   </div> <!-- ./div -->
 </template> <!-- ./template -->
 
