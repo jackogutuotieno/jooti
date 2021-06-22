@@ -4,28 +4,57 @@
             <b-col lg="6" class="left-col flex-centered">
                 <div class="p-5">
                     <div class="title-wrap left--line">
-                    <h2>Products and services that spark enthusiasm</h2>
+                    <h2>{{ section_title }}</h2>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia at sem nec accumsan. Vestibulum semper aliquet molestie.
+                    {{ section_content }}
                 </p>
                 <ul>
-                    <li>
-                        <span class="icon-phone"></span>
-                        <a href="tel:+254720801001">254 720 80 10 01</a>
-                    </li>
-                    <li>
-                        <span class="icon-social-github"></span>
-                        <a href="http://github.com/jooti_tech">@Jooti_tech</a>
+                    <li v-for="contact_item in contact_items" :key="contact_item.id">
+                        <span :class="contact_item.icon"></span>
+                        <a :href="contact_item.url">{{ contact_item.text }}</a>
                     </li>
                 </ul>
                 </div>
             </b-col> <!-- ./b-col -->
             <b-col lg="6" class="right-col">
-                <figure class="figure">
-                    <b-img fluid src="../assets/images/img-02.jpg"  class="img-padding-relative w-100 h-100" alt="About Us"></b-img>
+                <figure class="figure position-relative img-padding-relative p-0">
+                    <div class="overlay"></div>
+                    <b-img fluid src="../assets/images/img-02.jpg"  class="w-100 h-100" alt="About Us"></b-img>
                 </figure>
             </b-col>
         </b-row> <!-- ./b-row -->
     </b-container> <!-- ./b-container -->
 </template>
+
+<script>
+    export default {
+        data () {
+            return {
+                section_title: 'Products and services that spark enthusiasm',
+                section_content: 'We strive to be innovative and competitive always in this digital era. For comments or queries\
+                                  ,kindly reach us using the contacts below.',
+                contact_items: [
+                    { 
+                        id:'1', 
+                        icon: 'icon-phone', 
+                        url: 'tel:+254720801001',
+                        text: '254 720 80 10 01',
+                    },
+                    { 
+                        id:'2', 
+                        icon: 'icon-social-github', 
+                        url: 'http://github.com/jooti-tech',
+                        text: '@Jooti-tech',
+                    },
+                    { 
+                        id:'2', 
+                        icon: 'icon-envelope', 
+                        url: 'mailto:jack.otieno@ymail.com',
+                        text: 'jack.otieno@ymail.com',
+                    },
+                ],
+            }
+        }
+    }
+</script>
