@@ -2,12 +2,11 @@
     <div id="services">
         <b-container>
             <div class="title-wrap center--line">
-                <h2>our services</h2>
+                <h2>{{ section_title }}</h2>
             </div>
             <div class="text-center w-50 m-auto mb-3">
                 <p>
-                    This is Photoshop's version of Lorem Ipsum. Proin gravidavelvsauctor. aliquet. 
-                    Aenean sollicitudin, lorem quis bibend um auctor, nisi elequat ipsum,
+                    {{ section_content }}
                 </p>
             </div>
             <b-row>
@@ -16,17 +15,19 @@
                         <div class="icon-box"><span :class="service.icon"></span></div>
                         <h4>{{ service.title }}</h4>
                         <p>{{ service.text }}</p>
-                    </div>
-                </b-col>
-            </b-row>
-        </b-container>
-    </div>
-</template>
+                    </div> <!-- ./div -->
+                </b-col> <!-- ./b-col -->
+            </b-row> <!-- ./b-row -->
+        </b-container> <!-- ./b-container -->
+    </div> <!-- ./div -->
+</template> <!-- ./template -->
 
 <script>
     export default {
         data () {
             return {
+                section_title: 'our services',
+                section_content: 'What we do and how we create stuff.',
                 services: [
                     { 
                         id:'1', 

@@ -9,13 +9,13 @@
                             <h2>{{ slide.title }}</h2>
                             <p>{{ slide.caption }}</p>
                             <p><a :href="slide.link" class="btn btn-primary">more</a></p>
-                        </div>
-                    </div>
-                </div>
-            </carousel>
-        </div>
-    </header>
-</template>
+                        </div> <!-- ./div -->
+                    </div> <!-- ./div -->
+                </div> <!-- ./div -->
+            </carousel> <!-- ./carousel -->
+        </div> <!-- ./div -->
+    </header> <!-- ./header -->
+</template> <!-- ./template -->
 
 <script>
     export default {

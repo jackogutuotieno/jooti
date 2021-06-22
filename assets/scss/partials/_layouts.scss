@@ -35,6 +35,10 @@
     }
 }
 
+.content-padding {
+    padding: 4rem;
+}
+
 .flex-centered {
     @include flexbox;
     @include flex-direction(column);
