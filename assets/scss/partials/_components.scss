@@ -82,3 +82,51 @@
         }
     }
 }
+
+// Footer
+#footer {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+    .container {
+        position: absolute;
+        top: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(center);
+        z-index: 1;
+        .text-wrap {
+            padding: 2rem 2rem 2rem 0;
+            p {
+                color: $white;
+            }
+        }
+        h3 {
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            &:after {
+                content: '';
+                display: block;
+                width: 50px;
+                height: 2px;
+                background-color: $white;
+                margin: 1rem 0 2rem;
+            }
+        }
+        ul {
+            padding: 0;
+            li {
+                display: block;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

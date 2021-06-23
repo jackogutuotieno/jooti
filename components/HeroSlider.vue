@@ -3,7 +3,7 @@
         <div class="default-slider">
             <carousel :items="1" :dots="false" :autoplay="true">
                 <div class="slide" v-for="slide in slides" :key="slide.id">
-                    <img :src="slide.img_src" :alt="slide.alt"/>
+                    <b-img :src="slide.img_src" :alt="slide.alt"></b-img>
                     <div class="main-wrap">
                         <div class="text-wrap">
                             <h2>{{ slide.title }}</h2>

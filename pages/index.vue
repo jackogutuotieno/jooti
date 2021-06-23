@@ -5,6 +5,7 @@
     <Portfolio />
     <Services />
     <Contact />
+    <Footer />
   </div> <!-- ./div -->
 </template> <!-- ./template -->
 

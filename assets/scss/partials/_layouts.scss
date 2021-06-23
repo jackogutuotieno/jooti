@@ -59,4 +59,7 @@
     left: 0;
     background-color: rgba($color: $main-color, $alpha: .7);
     z-index: 1;
+    &.type--two {
+        background-color: rgba($color: $secondary-color, $alpha: .9);
+    }
 }
