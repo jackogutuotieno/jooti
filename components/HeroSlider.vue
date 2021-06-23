@@ -8,7 +8,7 @@
                         <div class="text-wrap">
                             <h2>{{ slide.title }}</h2>
                             <p>{{ slide.caption }}</p>
-                            <p><a :href="slide.link" class="btn btn-primary">more</a></p>
+                            <p><a :href="slide.link" class="btn btn-primary">view all services</a></p>
                         </div> <!-- ./div -->
                     </div> <!-- ./div -->
                 </div> <!-- ./div -->
@@ -24,19 +24,51 @@
                 slides: [
                     { 
                         id:'1', 
-                        img_src: require("../assets/images/slides/slide-01.jpg"), 
-                        alt: 'Image one',
-                        title: 'The standard Lorem Ipsum passage, used since the 1500s',
-                        caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                        link: '/home'
+                        img_src: require("../assets/images/slides/erp-system.jpg"), 
+                        alt: 'ERP Customization',
+                        title: 'ERP Customization',
+                        caption: 'We customize, design and deploy ERP systems that are scalable and match organizational needs.',
+                        link: '/#services'
                     },
                     { 
                         id:'2', 
-                        img_src: require("../assets/images/slides/slide-02.jpg"),
-                        alt: 'Image two',
-                        title: 'Sed ut perspiciatis unde omnis iste natus error sit',
-                        caption: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-                        link: '/about'
+                        img_src: require("../assets/images/slides/web-development.jpg"),
+                        alt: 'Web Development',
+                        title: 'Web Development',
+                        caption: 'We develop bespoke websites ad web apps as per your specifications.',
+                        link: '/#services'
+                    },
+                    { 
+                        id:'3', 
+                        img_src: require("../assets/images/slides/mobile-development.jpg"),
+                        alt: 'Mobile Development',
+                        title: 'Mobile Development',
+                        caption: 'We develop bespoke mobile apps/progressive web apps as per your specifications.',
+                        link: '/#services'
+                    },
+                    { 
+                        id:'4', 
+                        img_src: require("../assets/images/slides/usability-research.jpg"),
+                        alt: 'Usability Research & Audit',
+                        title: 'Usability Research & Audit',
+                        caption: 'We invest in researching UI/UX best practices to make your products stand out.',
+                        link: '/#services'
+                    },
+                    { 
+                        id:'5', 
+                        img_src: require("../assets/images/slides/social-media.jpg"),
+                        alt: 'Social Media Management',
+                        title: 'Social Media Management',
+                        caption: 'We will create and manage your social media pages to enable your organization, brand or campaign stand out',
+                        link: '/#services'
+                    },
+                    { 
+                        id:'6', 
+                        img_src: require("../assets/images/slides/seo.jpg"),
+                        alt: 'SEO & Analytics',
+                        title: 'SEO & Analytics',
+                        caption: 'We work hard to leverege better page ranks for your online presence and analytics for better decision making',
+                        link: '/#services'
                     },
                 ],
             }
