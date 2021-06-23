@@ -31,7 +31,7 @@
     export default {
         data () {
             return {
-                section_title: 'Products and services that spark enthusiasm',
+                section_title: 'Woulld you like to know about work, products or just know us over cofee :)?',
                 section_content: 'We strive to be innovative and competitive always in this digital era. For comments or queries\ ,kindly reach us using the contacts below.',
                 contact_items: [
                     { 

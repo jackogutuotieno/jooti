@@ -43,13 +43,6 @@
                         title: 'Moveon Telecoms',
                         caption: 'Precision WordPress Integration - 2020'
                     },
-                    { 
-                        id:'3', 
-                        img_src: require("../assets/images/portfolio/lontels.jpg"),
-                        alt: 'Destiny Women',
-                        title: 'Destiny Women',
-                        caption: 'Precision WordPress Integration - 2019',
-                    },
                 ],
             }
         }
