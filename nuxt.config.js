@@ -47,7 +47,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     //Simple Line Icons
-    'nuxt-simple-line-icons'
+    'nuxt-simple-line-icons',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
