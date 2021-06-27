@@ -48,20 +48,10 @@ export default {
     '@nuxt/content',
     //Simple Line Icons
     'nuxt-simple-line-icons',
-    // Apollo
-    '@nuxtjs/apollo',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: 'http://localhost:1337/graphql',
-      }
-    }
-  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
