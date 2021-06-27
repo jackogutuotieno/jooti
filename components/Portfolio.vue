@@ -1,5 +1,5 @@
 <template>
-    <div id="portfolio" class="default-slider">
+    <div id="portfolio" class="default-slider" :responsive="{0:{nav:false,dots:true}, 992:{nav:true,dots:false}}">
         <div class="title-wrap center--line">
             <h2> {{ section_title }}</h2>
         </div>
