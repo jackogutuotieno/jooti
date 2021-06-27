@@ -4,13 +4,13 @@
         <b-img :src="footer_bg_url" alt="Jooti Digital" class="w-100"></b-img>
         <b-container>
             <b-row>
-                <b-col lg="3">
+                <b-col md="6" lg="3">
                     <h3>{{footer_block_title}}</h3>
                     <div class="text-wrap">
                         <p>{{footer_block_text}}</p>
                     </div>
                 </b-col>
-                <b-col lg="3" v-for="block in footer_blocks.blocks" :key="block.id">
+                <b-col md="6" lg="3" v-for="block in footer_blocks.blocks" :key="block.id">
                     <h3>{{block.name}}</h3>
                     <ul v-for="item in block.items" :key="item.id">
                         <li> <a :href="item.url">{{item.text}}</a></li>

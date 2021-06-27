@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="default-slider">
-            <carousel :items="1" :dots="false" :autoplay="true">
+            <carousel :items="1" :dots="false" :autoplay="true" :responsive="{0:{nav:false,dots:true}, 992:{nav:true,dots:false}}">
                 <div class="slide" v-for="slide in slides" :key="slide.id">
                     <b-img :src="slide.img_src" :alt="slide.alt"></b-img>
                     <div class="main-wrap">
