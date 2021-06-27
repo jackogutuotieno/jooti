@@ -3,6 +3,7 @@
 // The spec: http://www.w3.org/TR/css3-flexbox
 // --------------------------------------------------
 
+
 // Flexbox display
 @mixin flexbox {
     display: -webkit-box;
@@ -215,4 +216,13 @@
       -ms-flex-item-align: $value;
     }
     align-self: $value;
+  }
+
+  // Transitions
+  @mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
   }

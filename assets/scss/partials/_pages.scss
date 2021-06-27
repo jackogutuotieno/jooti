@@ -6,23 +6,53 @@ header {
         .owl-nav {
             position: relative;
             right: -50px;
+            .owl-prev, .owl-next {
+                &:focus {
+                    background-color: $secondary-color;
+                }
+            }
         }
         .btn-primary {
             background-color: transparent;
             border-color: $white;
             letter-spacing: .2rem;
             position: relative;
-            display: inline-flex;
-            flex-direction: row;
-            align-items: center;
+            @include inline-flex;
+            @include flex-direction(row);
+            @include align-items(center);
             height: 50px;
             border-radius: 0;
-            &:after {
-                content: url('../../assets/images/long-arrow.svg');
-                color: $white;
+            position: relative;
+            color: $white;
+            @include transition(color .3s ease);
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background-color: $main-color;
+                @include transition(width .3s ease);
+            }
+            &:focus {
+                background-color: $main-color;
+            }
+            span {
+                position: relative;
+                z-index: 2;
+            }
+            svg { 
                 transform: rotate(180deg);
                 width: 63px;
                 height: 63px;
+                stroke: $black;
+            }
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
             }
         }
     }
@@ -82,6 +112,24 @@ header {
     .content-wrap {
         padding: 3rem;
         text-align: center;
+        @include transition(background-color .3s ease);
+        h4, p {
+            @include transition(color .3s ease);
+        }
+        &:hover {
+            background-color: $main-color;
+            .icon-box {
+                span {
+                    color: $white;
+                }
+            }
+            h4, p {
+                color: $white;
+            }
+            span {
+                color: $white;
+            }
+        }
         .icon-box {
             width: 8rem;
             height: 8rem;

@@ -8,7 +8,42 @@
                         <div class="text-wrap">
                             <h2>{{ slide.title }}</h2>
                             <p>{{ slide.caption }}</p>
-                            <p><a :href="slide.link" class="btn btn-primary">view all services</a></p>
+                            <p><a :href="slide.link" class="btn btn-primary">
+                                <span>view all services</span>
+                                <svg 
+                                    version="1.1" 
+                                    id="Layer_1" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    x="0px" 
+                                    y="0px" 
+                                    width="64px" 
+                                    height="64px" 
+                                    viewBox="0 0 64 64" 
+                                    enable-background="new 0 0 64 64" 
+                                    xml:space="preserve"
+                                >
+                                <g>
+                                    <line 
+                                        fill="none" 
+                                        stroke="#ffffff" 
+                                        stroke-width="1" 
+                                        stroke-miterlimit="10" 
+                                        x1="50" 
+                                        y1="32" 
+                                        x2="1" 
+                                        y2="32"
+                                    />
+                                </g>
+                                <polyline 
+                                    fill="none" 
+                                    stroke="#ffffff" 
+                                    stroke-width="1" 
+                                    stroke-linejoin="bevel" 
+                                    stroke-miterlimit="10" points="10,23 1,32 10,41 "
+                                />
+                                </svg>
+                                </a></p>
                         </div> <!-- ./div -->
                     </div> <!-- ./div -->
                 </div> <!-- ./div -->

@@ -1,5 +1,5 @@
 <template>
-    <div id="portfolio" class="default-slider" :responsive="{0:{nav:false,dots:true}, 992:{nav:true,dots:false}}">
+    <div id="portfolio" class="default-slider">
         <div class="title-wrap center--line">
             <h2> {{ section_title }}</h2>
         </div>
@@ -8,7 +8,7 @@
                 {{ section_content }}
             </p>
         </div>
-        <carousel :items="2" :center="true" :loop="true" :margin="10" :dots="false" :autoplay="true">
+        <carousel :items="2" :center="true" :loop="true" :margin="10" :nav="true" :dots="false" :autoplay="true" :responsive="{0:{nav:false,dots:true,center:false,items:1}, 992:{nav:true,dots:false}}">
             <div class="slide" v-for="slide in slides" :key="slide.id">
                 <img :src="slide.img_src" :alt="slide.alt"/>
                 <div class="main-wrap">

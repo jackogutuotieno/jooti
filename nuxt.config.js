@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'We love to create IT' }
+      { hid: 'description', name: 'description', content: 'Jooti Digital is an upcoming digital studio that creates products for web, mobile and gaming solutions. We love to create. From Nairobi, KE.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
