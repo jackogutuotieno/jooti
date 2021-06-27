@@ -13,11 +13,15 @@
 </template> <!-- ./template -->
 
 <script>
+    import gql from 'graphql-tag'
     export default {
         data () {
             return {
                 logo_url: '/',
                 logo_text: 'Jooti Digital',
+                menu: [
+
+                ],
                 menus: [
                     { 
                         url: '/',
