@@ -124,7 +124,6 @@
                 position: relative;
                 padding: 2rem;
                 background-color: $main-color;
-                height: 300px;
                 @include flexbox;
                 @include justify-content(center);
                 .text-wrap {
@@ -142,6 +141,9 @@
                 svg {
                     width: 40px;
                 }
+            }
+            .main-wrap {
+                height: 300px;
             }
         }
     }
