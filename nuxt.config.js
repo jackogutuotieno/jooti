@@ -48,7 +48,24 @@ export default {
     '@nuxt/content',
     //Simple Line Icons
     'nuxt-simple-line-icons',
+    'nuxt-graphql-request'
   ],
+
+  publicRuntimeConfig: {
+    graphql: {
+      clients: {
+        default: {
+          endpoint: 'https://graphql.contentful.com/content/v1/spaces/fmynplxweel4',
+          options: {
+            headers: {
+              authorization: 'Bearer O0Gd-AURmYkZHvqtbUV7vxlKLQGZWj-al4w18w6VvdY',
+              'Content-Type': 'application/json'
+            },
+          },
+        },
+      },
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
