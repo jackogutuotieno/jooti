@@ -2,19 +2,21 @@
     <div id="services">
         <b-container>
             <div class="title-wrap center--line">
-                <h2>{{ section_title }}</h2>
+                <h2>our services</h2>
             </div>
-            <div class="text-center w-50 m-auto mb-3">
+            <div class="text-center w-50 m-auto mb-3 font-bigger-lighter">
                 <p>
-                    {{ section_content }}
+                    Amazing services we offer our clients.
                 </p>
             </div>
             <b-row>
-                <b-col lg="4" v-for="service in services" :key="service.id">
+                <b-col lg="4" v-for="service in servicesSections" :key="service.id">
                     <div class="content-wrap">
-                        <div class="icon-box"><span :class="service.icon"></span></div>
-                        <h4>{{ service.title }}</h4>
-                        <p>{{ service.text }}</p>
+                        <div class="icon-box">
+                            <span :class="service.serviceIconClass"></span>
+                        </div>
+                        <h4>{{ service.serviceTitle }}</h4>
+                        <p>{{ service.serviceExcerpt.text }}</p>
                     </div> <!-- ./div -->
                 </b-col> <!-- ./b-col -->
             </b-row> <!-- ./b-row -->
@@ -23,50 +25,18 @@
 </template> <!-- ./template -->
 
 <script>
+    import { servicesQuery } from '~/graphql/query'
     export default {
         data () {
             return {
-                section_title: 'our services',
-                section_content: 'What we do and how we create stuff.',
-                services: [
-                    { 
-                        id:'1', 
-                        icon: 'icon-settings',
-                        title: 'ERP Integration',
-                        text: 'Why I say old chap that is, spiffing tomfoolery lost the plot plastered starkers tosser, say no biggie brolly bleeding superhe full monty Eliz',
-                    },
-                    { 
-                        id:'2', 
-                        icon: 'icon-screen-smartphone',
-                        title: 'Web Development',
-                        text: 'Why I say old chap that is, spiffing tomfoolery lost the plot plastered starkers tosser, say no biggie brolly bleeding superhe full monty Eliz',
-                    },
-                    { 
-                        id:'3', 
-                        icon: 'icon-screen-desktop',
-                        title: 'Mobile App Development',
-                        text: 'Why I say old chap that is, spiffing tomfoolery lost the plot plastered starkers tosser, say no biggie brolly bleeding superhe full monty Eliz',
-                    },
-                    { 
-                        id:'4', 
-                        icon: 'icon-notebook',
-                        title: 'Usability Research & Audit',
-                        text: 'Why I say old chap that is, spiffing tomfoolery lost the plot plastered starkers tosser, say no biggie brolly bleeding superhe full monty Eliz',
-                    },
-                    { 
-                        id:'5', 
-                        icon: 'icon-note',
-                        title: 'Social Media Management',
-                        text: 'Why I say old chap that is, spiffing tomfoolery lost the plot plastered starkers tosser, say no biggie brolly bleeding superhe full monty Eliz',
-                    },
-                    { 
-                        id:'6', 
-                        icon: 'icon-eye',
-                        title: 'Off/Online SEO',
-                        text: 'Why I say old chap that is, spiffing tomfoolery lost the plot plastered starkers tosser, say no biggie brolly bleeding superhe full monty Eliz',
-                    },
-                ],
+                servicesSections: [],
             }
+        },
+        apollo: {
+            servicesSections: {
+                prefetch: true,
+                query: servicesQuery,
+            },
         }
     }
 </script>

@@ -67,3 +67,17 @@ export const logoQuery = gql`
         }
     }   
 `
+
+// Services Query
+export const servicesQuery = gql`
+    query servicesQuery {
+        servicesSections {
+            id,
+            serviceIconClass,
+            serviceTitle,
+            serviceExcerpt {
+                text,
+            }
+        }
+    }   
+`
