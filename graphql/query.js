@@ -11,30 +11,45 @@ export const menuQuery = gql`
     }
 `
 
-// Sliders Query
-export const sliderQuery = gql`
-    query sliderQuery {
-        slides {
+// Hero Slider Query
+export const herosliderQuery = gql`
+    query herosliderQuery {
+        heroSliders {
             id,
             slideImage {
-                url,
+                url
             },
             slideTitle,
-            slideCaption
+            slideCaption {
+                text
+            }
         }
     }
 `
 
 // About Query
 export const aboutQuery = gql`
-    query aboutQuery{
+    query aboutQuery {
         aboutSections {
             id,
             aboutTitle,
-            aboutExcerpt,
+            aboutExcerpt {
+                text,
+            },
             aboutHeroImage {
+                id,
                 url
             }
         }
     }
+`
+
+// Logo Query
+export const logoQuery = gql`
+    query logoQuery{
+        logo {
+            id,
+            Logo
+        }
+    }   
 `

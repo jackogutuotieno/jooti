@@ -1,9 +1,9 @@
 <template>
     <div id="navigation">
         <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
-            <!-- <b-navbar-brand :href="logo_url">
-                <strong>{{ logo_text }}</strong>
-            </b-navbar-brand> -->
+            <b-navbar-brand href="/#">
+                <strong v-for="logoitem in logo" :key="logoitem.id">{{ logoitem.Logo }}</strong>
+            </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ms-auto">
@@ -17,7 +17,7 @@
 </template> <!-- ./template -->
 
 <script>
-    import { menuQuery } from '~/graphql/query'
+    import { logoQuery ,menuQuery } from '~/graphql/query'
     export default {
         data () {
             return {
@@ -30,6 +30,10 @@
             mainMenus: {
                 prefetch: true,
                 query: menuQuery,
+            },
+            logo: {
+                prefetch: true,
+                query: logoQuery,
             }
         }
     }

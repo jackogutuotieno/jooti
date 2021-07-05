@@ -11,7 +11,7 @@
                     </div>
                     <div class="content-padded">
                         <p>
-                            {{ about.aboutExcerpt }}
+                            {{ about.aboutExcerpt.text }}
                         </p>
                     </div> <!-- ./div -->
                 </b-col> <!-- ./b-col -->
