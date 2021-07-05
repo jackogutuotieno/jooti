@@ -1,9 +1,11 @@
 <template>
     <div id="navigation">
         <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
-            <b-navbar-brand href="/#">
-                <strong v-for="logoitem in logo" :key="logoitem.id">{{ logoitem.Logo }}</strong>
-            </b-navbar-brand>
+            <div v-for="brandingItem in brandings" :key="brandingItem.id">
+                <b-navbar-brand :href="brandingItem.brandingUrl">
+                    <b-img :src="brandingItem.brandingImage.url" :alt="brandingItem.brandingImageAlt"></b-img>
+                </b-navbar-brand>
+            </div>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ms-auto">
@@ -17,13 +19,14 @@
 </template> <!-- ./template -->
 
 <script>
-    import { logoQuery ,menuQuery } from '~/graphql/query'
+    import { brandingQuery ,menuQuery } from '~/graphql/query'
     export default {
         data () {
             return {
                 //logo_url: '/#',
                 //logo_text: 'Jooti Digital',
                 mainMenus: [],
+                brandings: [],
             }
         },
         apollo: {
@@ -31,9 +34,9 @@
                 prefetch: true,
                 query: menuQuery,
             },
-            logo: {
+            brandings: {
                 prefetch: true,
-                query: logoQuery,
+                query: brandingQuery,
             }
         }
     }

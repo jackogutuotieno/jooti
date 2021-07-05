@@ -9,7 +9,7 @@
                     <div class="title-wrap left--line">
                         <h2>{{ about.aboutTitle }}</h2>
                     </div>
-                    <div class="content-padded">
+                    <div class="content-padded font-bigger-lighter">
                         <p>
                             {{ about.aboutExcerpt.text }}
                         </p>

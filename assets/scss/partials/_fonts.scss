@@ -5,3 +5,9 @@ body {
 p {
     font-size: .9rem;
 }
+
+.font-bigger-lighter p {
+    font-size: 1.1rem !important;
+    color: rgba($color: $black, $alpha: .5);
+    font-weight: 500;
+}
