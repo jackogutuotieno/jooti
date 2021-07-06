@@ -3,7 +3,7 @@
         <b-container>
             <b-row id="about" class="bg-light" v-for="about in aboutSections" :key="about.id">
                 <b-col lg="6" class="left-col">
-                    <b-img fluid src="../assets/images/img-01.jpg" alt="About Us"></b-img>
+                    <b-img fluid :src="about.aboutHeroImage.url" :alt="about.aboutHeroImageAlt"></b-img>
                 </b-col>
                 <b-col lg="6" class="right-col flex-centered">
                     <div class="title-wrap left--line">

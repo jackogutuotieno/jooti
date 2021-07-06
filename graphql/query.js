@@ -51,9 +51,9 @@ export const aboutQuery = gql`
                 text,
             },
             aboutHeroImage {
-                id,
                 url
-            }
+            },
+            aboutHeroImageAlt,
         }
     }
 `
@@ -78,6 +78,35 @@ export const servicesQuery = gql`
             serviceExcerpt {
                 text,
             }
+        }
+    }   
+`
+
+// Contacts Query
+export const contactsQuery = gql`
+    query contactsQuery {
+        contactSections {
+            id,
+            contactTitle,
+            contactExcerpt {
+                text,
+            },
+            contactImageBanner {
+                url
+            },
+            contactImageBannerAlt,
+        }
+    }   
+`
+
+// Contacts Objects Query
+export const contactObjectQuery = gql`
+    query contactObjectQuery {
+        contactObjects {
+            id,
+            contactObjecIcon,
+            contactObjecUrl,
+            contactObjecText
         }
     }   
 `
