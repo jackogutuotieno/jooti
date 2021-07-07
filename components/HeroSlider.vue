@@ -3,7 +3,7 @@
         <div class="default-slider">
             <carousel v-if="heroSliders.length > 0" :items="1" :dots="false" :autoplay="true" :responsive="{0:{nav:false,dots:true}, 992:{nav:true,dots:false}}">
                 <div class="slide" v-for="slide in heroSliders" :key="slide.id">
-                    <b-img :src="slide.slideImage.url"></b-img>
+                    <b-img :src="slide.slideImage.url" :alt="slide.slideImageAlt"></b-img>
                     <div class="main-wrap">
                         <div class="text-wrap">
                             <h2>{{ slide.slideTitle }}</h2>

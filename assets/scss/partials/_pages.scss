@@ -77,9 +77,36 @@ header {
     padding-top: 6rem;
     margin-left: 0;
     margin-right: 0;
+    h3 {
+        font-size: 1.4rem;
+        color: $white;
+        font-weight: 700;
+        &:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background-color: $white;
+            margin: 1rem auto;
+        }
+    }
+    p {
+        a {
+            color: $white;
+            text-decoration: none;
+            display: block;
+            padding: .5rem;
+            border: 1px solid $white;
+            margin: 2rem auto 0;
+            max-width: 280px;
+        }
+    }
     .slide {
         .main-wrap {
             padding: 2rem;
+            background-color: rgba($color: $main-color, $alpha: .9);
+            @include justify-content(center);
+            text-align: center;
             .text-wrap {
                 width: 100%;
                 h2 {

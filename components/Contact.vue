@@ -2,7 +2,7 @@
     <b-container fluid>
         <b-row id="contact" class="bg-light" v-for="contact in contactSections" :key="contact.id">
             <b-col lg="6" class="left-col flex-centered">
-                <div class="content-padding">
+                <div class="content-padding font-bigger-lighter">
                     <div class="title-wrap left--line">
                         <h2>{{ contact.contactTitle }}</h2>
                     </div> <!-- ./div -->
@@ -28,26 +28,6 @@
 </template> <!-- ./template -->
 
 <script>
-    /* export default {
-        data () {
-            return {
-                contact_items: [
-                    { 
-                        id:'2', 
-                        icon: 'icon-social-github', 
-                        url: 'http://github.com/jooti-tech',
-                        text: '@Jooti-tech',
-                    },
-                    { 
-                        id:'3', 
-                        icon: 'icon-envelope', 
-                        url: 'mailto:jack.otieno@ymail.com',
-                        text: 'jack.otieno@ymail.com',
-                    },
-                ],
-            }
-        }
-    } */
     import { contactsQuery, contactObjectQuery } from '~/graphql/query'
     export default {
         data () {

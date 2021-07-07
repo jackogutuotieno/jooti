@@ -33,6 +33,7 @@ export const herosliderQuery = gql`
             slideImage {
                 url
             },
+            slideImageAlt,
             slideTitle,
             slideCaption {
                 text
@@ -109,4 +110,35 @@ export const contactObjectQuery = gql`
             contactObjecText
         }
     }   
+`
+
+// Portfolio Section Query
+export const portfolioQuery = gql`
+    query portfolioQuery {
+        portfolioSections {
+            id,
+            portfolioTitle,
+            portfolioExcerpt {
+                text
+            }
+        }
+    }
+`
+
+// Portfolio Items Query
+export const portfolioItemsQuery = gql`
+    query portfolioItemsQuery {
+        portfolioItems {
+            id,
+            portfolioItemImage {
+                url
+            },
+            portfolioItemImageAlt,
+            portfolioItemTitle,
+            portfolioItemCaption {
+                text
+            },
+            portfolioItemLink
+        }
+    }
 `
