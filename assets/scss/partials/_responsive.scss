@@ -115,6 +115,11 @@
         height: 100%;
         overflow: visible;
     }
+    #portfolio .text-center {
+        width: 100% !important;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -133,6 +138,9 @@
                 }
             }
         }
+    }
+    #portfolio .text-center p {
+        word-break: break-all;
     }
     header {
         .default-slider {
@@ -155,5 +163,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    #navigation nav .navbar-brand img {
+        max-width: 170px;
     }
 }
