@@ -1,6 +1,6 @@
 <template>
     <div id="navigation">
-        <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
+        <b-navbar v-b-scrollspy="{offset:50, method:'auto'}" toggleable="lg" type="light" variant="light" fixed="top">
             <div v-for="brandingItem in brandings" :key="brandingItem.id">
                 <b-navbar-brand :href="brandingItem.brandingUrl">
                     <b-img :src="brandingItem.brandingImage.url" :alt="brandingItem.brandingImageAlt"></b-img>

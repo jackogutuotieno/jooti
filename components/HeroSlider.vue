@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="default-slider">
+        <div id="home" class="default-slider">
             <carousel v-if="heroSliders.length > 0" :items="1" :dots="false" :autoplay="true" :responsive="{0:{nav:false,dots:true}, 992:{nav:true,dots:false}}">
                 <div class="slide" v-for="slide in heroSliders" :key="slide.id">
                     <b-img :src="slide.slideImage.url" :alt="slide.slideImageAlt"></b-img>

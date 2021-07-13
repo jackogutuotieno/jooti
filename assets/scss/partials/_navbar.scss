@@ -21,6 +21,12 @@
             li {
                 position: relative;
                 background-color: transparent;
+                &.active {
+                    background-color: $main-color;
+                    a {
+                        color: $white;
+                    }
+                }
                 &:before {
                     content: '';
                     display: block;
@@ -41,10 +47,6 @@
                 }
                 a {
                     padding: 1.5rem 1rem;
-                    &.nuxt-link-exact-active {
-                        background-color: $main-color;
-                        color: $white;
-                    }
                 }
             }
         }
