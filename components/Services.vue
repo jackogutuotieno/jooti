@@ -4,7 +4,7 @@
             <div class="title-wrap center--line">
                 <h2>our services</h2>
             </div>
-            <div class="text-center w-50 m-auto mb-3 font-bigger-lighter">
+            <div class="text-center w-50 m-auto mb-5 font-bigger-lighter">
                 <p>
                     Amazing services we offer our clients.
                 </p>

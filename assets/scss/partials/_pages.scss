@@ -139,6 +139,9 @@ header {
         padding: 3rem;
         text-align: center;
         @include transition(background-color .3s ease);
+        border: 1px solid rgba($color: $black, $alpha: .3);
+        min-height: 450px;
+        margin-bottom: 25px;
         h4, p {
             @include transition(color .3s ease);
         }
