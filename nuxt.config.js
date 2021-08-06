@@ -48,8 +48,13 @@ export default {
     '@nuxt/content',
     //Simple Line Icons
     'nuxt-simple-line-icons',
+    // Apollo Client
     '@nuxtjs/apollo',
+    // Nuxt RFG Icon
+    'nuxt-rfg-icon',
+    '@nuxtjs/manifest', 
   ],
+  
 
   apollo: {
     clientConfigs: {
