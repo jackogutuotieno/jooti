@@ -2,8 +2,8 @@
   <div class="home-page">
     <HeroSlider />
     <About />
-    <Services />
     <Portfolio />
+    <Services />
     <Contact />
     <Footer />
   </div> <!-- ./div -->

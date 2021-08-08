@@ -50,9 +50,6 @@ export default {
     'nuxt-simple-line-icons',
     // Apollo Client
     '@nuxtjs/apollo',
-    // Nuxt RFG Icon
-    'nuxt-rfg-icon',
-    '@nuxtjs/manifest', 
   ],
   
 
