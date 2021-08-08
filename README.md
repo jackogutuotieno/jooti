@@ -1,4 +1,4 @@
-# jooti
+# Jooti Digital
 
 ## Build Setup
 
