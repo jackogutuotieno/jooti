@@ -10,7 +10,7 @@
                 </p>
             </div>
         </div>
-        <carousel v-if="portfolioItems.length > 0" :items="2" :center="true" :loop="true" :margin="10" :nav="true" :dots="false" :autoplay="true" :responsive="{0:{nav:false,dots:true,center:false,items:1}, 992:{nav:true,dots:false}}">
+        <carousel v-if="portfolioItems.length > 0" :items="2" :center="true" :loop="true" :margin="10" :nav="true" :dots="true" :autoplay="true" :responsive="{0:{dots:true,center:false,items:1}, 992:{nav:true,dots:false}}">
             <div class="slide mb-5" v-for="portfolioItem in portfolioItems" :key="portfolioItem.id">
                 <img :src="portfolioItem.portfolioItemImage.url" />
                 <div class="main-wrap">
