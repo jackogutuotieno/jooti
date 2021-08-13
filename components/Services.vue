@@ -10,7 +10,7 @@
                 </p>
             </div>
             <b-row>
-                <b-col lg="4" v-for="service in servicesSections" :key="service.id">
+                <b-col lg="6" v-for="service in servicesSections" :key="service.id">
                     <div class="content-wrap">
                         <div class="icon-box">
                             <span :class="service.serviceIconClass"></span>
