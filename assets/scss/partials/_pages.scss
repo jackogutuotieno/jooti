@@ -139,7 +139,7 @@ header {
         padding: 2rem;
         text-align: center;
         @include transition(background-color .3s ease);
-        min-height: 450px;
+        min-height: 300px;
         margin-bottom: 25px;
         h4, p {
             @include transition(color .3s ease);
